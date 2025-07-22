@@ -30,11 +30,11 @@ client = openai.OpenAI(
     organization=os.environ.get("ORGANIZATION_ID")
 )
 
-CONVERTER_API_KEY = '43af89a58a6d8fd938bdd176d46766df'  
-BASE_URL = os.environ.get("BASE_URL")
-WEATHERAPI_KEY= os.environ.get("WEATHERAPI_KEY")
-ADMIN_REQUIRED_EMAIL = 'admin@viasacra.com'  
-GOOGLE_MAPS_API= os.environ.get("GOOGLE_MAPS_API")
+CONVERTER_API_KEY = os.environ.get('CONVERTER_API_KEY')
+BASE_URL = os.environ.get('BASE_URL')
+WEATHERAPI_KEY= os.environ.get('WEATHERAPI_KEY')
+ADMIN_REQUIRED_EMAIL = os.environ.get('ADMIN_REQUIRED_EMAIL')
+GOOGLE_MAPS_API= os.environ.get('GOOGLE_MAPS_API')
 SENDGRID_API_KEY = os.environ.get('SENDGRID_API_KEY')
 s = URLSafeTimedSerializer(os.environ.get('SECRET_KEY'))
 
